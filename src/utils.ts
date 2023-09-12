@@ -1,4 +1,5 @@
 import axios from "axios";
+import * as chalk from "chalk";
 
 export const getAge = async (name: string) => {
     const response = await axios.get(`https://api.agify.io/?name=${name}`);
@@ -7,7 +8,7 @@ export const getAge = async (name: string) => {
 };
 
 export const printName = (name: string) => {
-    console.log(`Hello, ${name || "World"}!`);
+    console.log(chalk.red(`Hello, ${name || "World"}!`))
 };
 
 export const performOperation = (
@@ -27,5 +28,5 @@ export const performOperation = (
             console.error(("Invalid operation"));
             process.exit(1);
     }
-    console.log((result));
+    console.log(chalk.red(result));
 };
