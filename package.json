@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cli": "ts-node src/index.ts Hello"
+    "hello": "ts-node src/index.ts Hello",
+    "calc": "ts-node src/index.ts calc -o"
   },
   "keywords": [],
   "author": "",
