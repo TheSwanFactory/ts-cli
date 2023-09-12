@@ -1,3 +1,5 @@
+#!/usr/bin/env ts-node
+
 import { getAge, performOperation, printName, } from "./utils";
 import { Command } from "commander";
 

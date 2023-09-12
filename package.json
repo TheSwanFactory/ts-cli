@@ -8,6 +8,9 @@
     "calc": "ts-node src/index.ts calc -o",
     "age": "ts-node src/index.ts age"
   },
+  "bin": {
+    "ts-cli": "./dist/src/index.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
