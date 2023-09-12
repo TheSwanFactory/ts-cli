@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "hello": "ts-node src/index.ts Hello",
-    "calc": "ts-node src/index.ts calc -o"
+    "calc": "ts-node src/index.ts calc -o",
+    "age": "ts-node src/index.ts age"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "axios": "^1.5.0",
     "commander": "^11.0.0"
   }
 }

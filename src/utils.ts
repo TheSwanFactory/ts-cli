@@ -1,3 +1,11 @@
+import axios from "axios";
+
+export const getAge = async (name: string) => {
+    const response = await axios.get(`https://api.agify.io/?name=${name}`);
+    const data = await response.data;
+    console.log(`${(data["name"])} - ${(data["age"])} `);
+};
+
 export const printName = (name: string) => {
     console.log(`Hello, ${name || "World"}!`);
 };
