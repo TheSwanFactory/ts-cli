@@ -6,7 +6,9 @@
   "scripts": {
     "hello": "ts-node src/index.ts Hello",
     "calc": "ts-node src/index.ts calc -o",
-    "age": "ts-node src/index.ts age"
+    "age": "ts-node src/index.ts age",
+    "install": "npx tsc && npm install -g",
+    "uninstall": "npm uninstall -g ts-cli"
   },
   "bin": {
     "ts-cli": "./dist/src/index.js"
