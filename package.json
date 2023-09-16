@@ -11,7 +11,7 @@
     "uninstall": "npm uninstall -g ts-cli"
   },
   "bin": {
-    "ts-cli": "./dist/src/index.js"
+    "ts-cli": "./dist/index.js"
   },
   "keywords": [],
   "author": "",

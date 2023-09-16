@@ -23,8 +23,8 @@ $ npm run hello
 Hello, World!
 $ npm run hello Universe!
 Hello, Universe!!
-$ npm run calc -o multiply 10 16 # or `add`
+$ npm run calc -o multiply 10 16 # or: add | divide
 160
-$ npm run age Ernie # REST API call
+$ npm run age Ernie # Use axios to call the agify API 
 Ernie - 74
 ```

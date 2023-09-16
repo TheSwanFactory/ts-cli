@@ -18,7 +18,7 @@ program
     .command("calc")
     .argument("<num1>")
     .argument("<num2>")
-    .option("-o, --operation <operation>", "Operation to perform")
+    .option("-o, --operation <operation>", "Operation to perform: add, multiply, divide")
     .action(performOperation);
 
 program.parse(process.argv);

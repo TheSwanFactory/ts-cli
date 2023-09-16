@@ -4,11 +4,11 @@ import * as chalk from "chalk";
 export const getAge = async (name: string) => {
     const response = await axios.get(`https://api.agify.io/?name=${name}`);
     const data = await response.data;
-    console.log(`${(data["name"])} - ${(data["age"])} `);
+    console.log(`${chalk.yellow(data["name"])} - ${chalk.yellowBright(data["age"])}`);
 };
 
 export const printName = (name: string) => {
-    console.log(chalk.red(`Hello, ${name || "World"}!`))
+    console.log(chalk.blue(`Hello, ${name || "World"}!`))
 };
 
 export const performOperation = (
@@ -20,6 +20,9 @@ export const performOperation = (
     switch (options.operation) {
         case "multiply":
             result = num1 * num2;
+            break;
+        case "add":
+            result = num1 + num2;
             break;
         case "divide":
             result = num1 / num2;
