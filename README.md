@@ -12,6 +12,9 @@ These include:
 
 * Restricting to "chalk": "^4.1.2"
 * Avoiding the confusingly-named 'npm run install'
+* import { expect } from "chai";
+* npm run test
+
 
 ## Usage
 

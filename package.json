@@ -8,6 +8,7 @@
     "calc": "ts-node src/index.ts calc -o",
     "age": "ts-node src/index.ts age",
     "js-cli": "npx tsc && node dist/index.js",
+    "test": "mocha --require ts-node/register test/**/*.ts",
     "ts-cli-install": "npx tsc && npm install -g",
     "ts-cli-uninstall": "npm uninstall -g ts-cli",
     "ts-cli-run": "ts-cli hello Globally Insalled CLI in TypeScript"
