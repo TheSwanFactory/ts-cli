@@ -10,7 +10,7 @@ program
     .action(getAge)
 
 program
-    .command("Hello")
+    .command("hello")
     .argument("[name]")
     .action(printName);
 
