@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { getAge, performOperation, printName, } from "./utils";
+import { getAge, performOperation, printName, } from "./utils.js";
 import { Command } from "commander";
 
 const program = new Command();
