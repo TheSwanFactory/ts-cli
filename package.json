@@ -10,7 +10,7 @@
     "build": "npx tsc",
     "clean": "rm -rf dist",
     "js-cli": "npm run build && node dist/src/index.js",
-    "test": "mocha --require ts-node/register test/**/*.*ts",
+    "test": "npm run build && mocha --require ts-node/register test/**/*.*ts",
     "ts-cli-installts-cli": "npm run build && npm install -g",
     "ts-cli-uninstall": "npm uninstall -g ts-cli",
     "ts-cli-run": "ts-cli hello Globally Insalled CLI in TypeScript"
