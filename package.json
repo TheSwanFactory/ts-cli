@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "hello": "ts-node src/index.ts hello",
-    "calc": "ts-node src/index.ts calc -o",
     "age": "ts-node src/index.ts age",
+    "calc": "ts-node src/index.ts calc -o",
+    "hello": "ts-node src/index.ts hello",
+    "build": "npx tsc",
     "js-cli": "npx tsc && node dist/index.js",
     "test": "mocha --require ts-node/register test/**/*.ts",
     "ts-cli-install": "npx tsc && npm install -g",
