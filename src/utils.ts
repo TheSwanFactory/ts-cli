@@ -8,7 +8,7 @@ export const getAge = async (name: string) => {
 };
 
 export const printName = (name: string) => {
-    console.log(chalk.blue(`Hello, ${name || "World"}!`))
+    console.log(chalk.bgCyanBright.blue(`Hello, ${name || "World"}!`))
 };
 
 export const performOperation = (

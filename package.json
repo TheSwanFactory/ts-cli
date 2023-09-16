@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "hello": "ts-node src/index.ts Hello",
+    "hello": "ts-node src/index.ts hello",
     "calc": "ts-node src/index.ts calc -o",
     "age": "ts-node src/index.ts age",
     "install": "npx tsc && npm install -g",
