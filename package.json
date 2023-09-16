@@ -9,7 +9,8 @@
     "age": "ts-node src/index.ts age",
     "js-cli": "npx tsc && node dist/index.js",
     "ts-cli-install": "npx tsc && npm install -g",
-    "ts-cli-uninstall": "npm uninstall -g ts-cli"
+    "ts-cli-uninstall": "npm uninstall -g ts-cli",
+    "ts-cli-run": "ts-cli hello Globally Insalled CLI in TypeScript"
   },
   "bin": {
     "ts-cli": "./dist/index.js"
