@@ -4,22 +4,29 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "hello": "ts-node src/index.ts hello",
-    "calc": "ts-node src/index.ts calc -o",
     "age": "ts-node src/index.ts age",
-    "js-cli": "npx tsc && node dist/index.js",
-    "ts-cli-install": "npx tsc && npm install -g",
+    "calc": "ts-node src/index.ts calc -o",
+    "hello": "ts-node src/index.ts hello",
+    "build": "npx tsc",
+    "clean": "rm -rf dist",
+    "js-cli": "npm run build && node dist/src/index.js",
+    "test": "mocha --require ts-node/register test/**/*.ts",
+    "ts-cli-installts-cli": "npm run build && npm install -g",
     "ts-cli-uninstall": "npm uninstall -g ts-cli",
     "ts-cli-run": "ts-cli hello Globally Insalled CLI in TypeScript"
   },
   "bin": {
-    "ts-cli": "./dist/index.js"
+    "ts-cli": "./dist/src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.6.0",
+    "@types/chai": "^4.3.6",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.6.1",
+    "chai": "^4.3.8",
+    "mocha": "^10.2.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   },
