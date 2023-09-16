@@ -8,14 +8,15 @@
     "calc": "ts-node src/index.ts calc -o",
     "hello": "ts-node src/index.ts hello",
     "build": "npx tsc",
-    "js-cli": "npx tsc && node dist/index.js",
+    "clean": "rm -rf dist",
+    "js-cli": "npm run build && node dist/src/index.js",
     "test": "mocha --require ts-node/register test/**/*.ts",
-    "ts-cli-install": "npx tsc && npm install -g",
+    "ts-cli-installts-cli": "npm run build && npm install -g",
     "ts-cli-uninstall": "npm uninstall -g ts-cli",
     "ts-cli-run": "ts-cli hello Globally Insalled CLI in TypeScript"
   },
   "bin": {
-    "ts-cli": "./dist/index.js"
+    "ts-cli": "./dist/src/index.js"
   },
   "keywords": [],
   "author": "",

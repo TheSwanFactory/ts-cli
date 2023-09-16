@@ -4,7 +4,7 @@ import * as childProcess from "child_process";
 
 // helper method to call execSync with dist/index.js
 const run = (args: string) => {
-    return childProcess.execSync(`node ./dist/index.js ${args}`, {
+    return childProcess.execSync(`node ./dist/src/index.js ${args}`, {
         encoding: "utf8",
     });
 };

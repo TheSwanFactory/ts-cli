@@ -10,11 +10,11 @@ from Jan 2023 with various fixes that were not obvious (at least to me).
 
 These include:
 
-* Restricting to "chalk": "^4.1.2"
+* Restricting "chalk" to "^4.1.2"
 * Avoiding the confusingly-named 'npm run install'
 * import { expect } from "chai";
 * "test" : "mocha --require ts-node/register test/**/*.ts"
-* Add node GitHub Action (tests dist/index.js, not installed version) 
+* Add node GitHub Action (tests dist/src/index.js, not installed version) 
 
 
 ## Usage
