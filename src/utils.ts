@@ -1,5 +1,5 @@
 import axios from "axios";
-import * as chalk from "chalk";
+import chalk from "chalk";
 
 export const getAge = async (name: string) => {
     const response = await axios.get(`https://api.agify.io/?name=${name}`);
