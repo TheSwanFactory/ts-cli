@@ -17,6 +17,7 @@ Other changes include:
 * import { expect } from "chai";
 * "test" : "mocha --require ts-node/register test/**/*.ts"
 * Adding node GitHub Action (for continuous testing)
+* Using readline with ECMAScript (ESM) and TypeScript
 
 
 ## Usage

@@ -10,9 +10,10 @@
     "test-only": "mocha --require ts-node/register test/**/*.*ts",
     "start": "npm run build && node dist/src/index.js",
     "test-log": "NODE_DEBUG=* mocha --require ts-node/register test/**/*.*ts",
-    "age": "ts-node src/index.ts age",
-    "calc": "ts-node src/index.ts calc -o",
-    "hello": "ts-node src/index.ts hello",
+    "age": "node dist/src/index.js age",
+    "ask": "node dist/src/index.js ask",
+    "calc": "node dist/src/index.js -o",
+    "hello": "node dist/src/index.js hello",
     "ts-cli-install": "npm run build && npm install -g",
     "ts-cli-uninstall": "npm uninstall -g ts-cli",
     "ts-cli-check": "ts-cli hello Globally Installed CLI in TypeScript"
